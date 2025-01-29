@@ -4,6 +4,10 @@ Welcome to **3 Steps to Fly**, a sleek, responsive, and fully interactive **mult
 
 ![Preview of the form in action](https://github.com/TheWarko/3steps/blob/main/public/preview.gif)
 
+## 🌐 Demo
+
+Here the [demo link](https://3stepstofly.netlify.app/) on Netlify.
+
 ---
 
 ## 🛠 Technologies Used
