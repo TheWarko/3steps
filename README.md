@@ -27,18 +27,18 @@ Welcome to **3 Steps to Fly**, a sleek, responsive, and fully interactive **mult
 2️⃣ **Start the development server**  
  npm run dev
 
-# App available at: http://localhost:3000
+#### App available at: http://localhost:3000
 
 3️⃣ **Build for production**  
  npm run build
 
 4️⃣ **Run tests locally**
 
-# Unit tests
+**Unit tests**
 
 npm run test
 
-# E2E tests
+**E2E tests**
 
 npx cypress run
 
@@ -55,4 +55,4 @@ npx cypress run
 3️⃣ **Run the application in Docker**  
  docker run -v \$(pwd):/mnt -p 9090:9090 -w /mnt mytest ./scripts/run.sh
 
-# App available at: http://localhost:9090
+#### App available at: http://localhost:9090
