@@ -1,0 +1,72 @@
+@use "@/styles/screens.scss" as screens;
+@use "@/styles/fontstyles.scss" as fontstyles;
+
+.registration {
+  padding: 16px;
+}
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+  flex-direction: column;
+
+  @include screens.medium {
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  @include screens.large {
+    gap: 16px;
+    flex-direction: row;
+  }
+}
+
+.superTitle {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #fff;
+
+  .inTitle {
+    color: #4a98d2;
+  }
+
+  @include screens.medium {
+    font-size: 60px;
+  }
+  @include screens.large {
+    font-size: 60px;
+  }
+}
+
+@mixin question {
+  margin-bottom: 24px;
+}
+
+@mixin questionTitle {
+  @include fontstyles.italicTitle;
+  font-size: 24px;
+  display: inline;
+  padding-right: 8px;
+  font-weight: 600;
+  // @include screens.medium {
+  //   font-size: 28px;
+  // }
+  @include screens.large {
+    font-size: 24px;
+  }
+}
+
+@mixin doneWrapper {
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: max-height 0.3s ease-in-out;
+
+  &.visible {
+    margin-top: 40px;
+    max-height: 200px;
+  }
+}

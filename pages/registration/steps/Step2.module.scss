@@ -1,0 +1,41 @@
+@use "../Registration.module.scss" as reg;
+@use "@/styles/fontstyles.scss" as fontstyles;
+
+.radioGroup {
+  margin: 16px 0;
+  > label {
+    padding-left: 4px;
+    margin-right: 8px;
+  }
+}
+
+.companyNameWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+
+  &.visible {
+    max-height: 500px;
+  }
+}
+
+.companyLabel {
+  @include fontstyles.italicTitle;
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.question {
+  @include reg.question;
+}
+
+.questionTitle {
+  @include reg.questionTitle;
+}
+
+.doneWrapper {
+  @include reg.doneWrapper;
+}

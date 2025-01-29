@@ -1,0 +1,27 @@
+@use "../Registration.module.scss" as reg;
+@use "@/styles/screens.scss" as screens;
+
+.btnComplete {
+  display: block;
+  padding: 4px 8px;
+  width: 100%;
+  margin-top: 24px;
+  @include screens.medium {
+    width: auto;
+  }
+  @include screens.large {
+    width: auto;
+  }
+}
+
+.question {
+  @include reg.question;
+}
+
+.questionTitle {
+  @include reg.questionTitle;
+}
+
+.doneWrapper {
+  @include reg.doneWrapper;
+}

@@ -1,0 +1,28 @@
+.box {
+  position: relative;
+  padding: 24px;
+  padding-top: 40px;
+  width: 100%;
+
+  &.green {
+    background-color: #b3edcc;
+  }
+  &.blue {
+    background-color: #b3dfee;
+  }
+  &.brown {
+    background-color: #efcdb3;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.label {
+  position: absolute;
+  top: -22px;
+  left: 20px;
+}

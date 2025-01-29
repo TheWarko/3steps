@@ -1,0 +1,66 @@
+@use "@/styles/screens.scss" as screens;
+@use "../Registration.module.scss" as reg;
+@use "@/styles/fontstyles.scss" as fontstyles;
+
+.attendeesWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+
+  &.visible {
+    max-height: calc(31px + 42px * var(--num-attendees));
+
+    @include screens.medium {
+      @media (max-width: 964px) {
+        max-height: calc(54px + 42px * var(--num-attendees));
+      }
+    }
+
+    @include screens.large {
+      max-height: calc(31px + 26px * var(--num-attendees));
+    }
+  }
+}
+
+.attendeesTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  min-height: 23px;
+}
+
+.attendeesField {
+  display: block;
+  margin-bottom: 4px;
+  @include screens.large {
+    height: 22px;
+  }
+}
+
+.attendeesLabel {
+  @include fontstyles.italicTitle;
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 118px;
+}
+.attendeesInput {
+  width: 100%;
+  padding: 0 2px;
+  @include screens.large {
+    width: auto;
+  }
+}
+
+.question {
+  @include reg.question;
+}
+
+.questionTitle {
+  @include reg.questionTitle;
+}
+
+.doneWrapper {
+  @include reg.doneWrapper;
+}
